@@ -70,6 +70,15 @@ body {
 	min-height:100%;
 }
 
+#flexslider {
+	max-height:1300px;
+	width: 100%;
+}
+
+.carousel-item {
+	max-width: 100%;
+}
+
 strong {
 	font-weight:700;
 }
