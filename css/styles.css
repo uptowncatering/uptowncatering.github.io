@@ -20,6 +20,24 @@ html {
 	min-height: 100%;
 }
 
+/* CSS transitions */
+a, li {
+	/* Unfortunately, it doesn't seem posible to do exclude background-position from all, so just don't use any sprites */
+	transition: all .25s cubic-bezier(0.64,0.20,0.02,0.35);
+	-webkit-transition: all .25s cubic-bezier(0.64,0.20,0.02,0.35);
+}
+
+img {
+	transition: all .3s cubic-bezier(0.64,0.20,0.02,0.35);
+	-webkit-transition: all .4s cubic-bezier(0.64,0.20,0.02,0.35);
+}
+
+input, textarea, button, label, option, select, .button, .hndle {
+	transition: all .25s cubic-bezier(0.64,0.20,0.02,0.35);
+	-webkit-transition: all .25s cubic-bezier(0.64,0.20,0.02,0.35);
+}
+/* End Transitions */
+
 .navbar {
 	background:#8b95a6;
 	border: none;
@@ -70,19 +88,22 @@ body {
 	min-height:100%;
 }
 
-#flexslider {
-	max-height:1300px;
-	width: 100%;
+.flexslider {
+	overflow: hidden !important;
+	z-index: -1 !important;
+	max-height: 750px;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
 }
 
-.carousel-item {
-	max-width: 100%;
-	height: 100%;
+.slides li {
+	max-height: 750px !important;
 }
 
-.carousel-item img {
-	width: 100%;
-	height: 100%;
+ul.slides li img {
+	background-size: contain !important;
+	background-position: center !important;
 }
 
 strong {
@@ -409,11 +430,11 @@ button:focus {
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
-	color:#d5ccc2 !important;
+	color:#fff !important;
 }
 
 .icon-bar {
-	background:#d5ccc2 !important;
+	background:#fff !important;
 }
 
 .span3 {
@@ -518,7 +539,7 @@ button:focus {
 
 @media (max-width: 768px) {
 body {
-	padding-top:80px;
+	//padding-top:80px;
 }
 
 .navbar-brand {
