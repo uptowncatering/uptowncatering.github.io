@@ -236,7 +236,7 @@ footer a {
 
 .nav li a:hover {
 	color:#ddd !important;
-	background:rgba( 170, 170, 170, 0.9) !important;
+	background:rgba( 170, 170, 170, 0) !important;
 	text-shadow:none !important;
 }
 
