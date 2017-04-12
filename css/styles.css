@@ -184,7 +184,7 @@ a {
 }
 
 a:hover {
-	color:#ddd;
+	color:#aaa;
 	opacity:0.7;
 }
 
@@ -236,7 +236,7 @@ footer a {
 
 .nav li a:hover {
 	color:#ddd !important;
-	background:rgba( 170, 170, 170 0.9) !important;
+	background:rgba( 170, 170, 170, 0.9) !important;
 	text-shadow:none !important;
 }
 
@@ -300,11 +300,11 @@ h1 {
 }
 
 hr {
-	border-top:none;
+	opacity:0.5;
+	border-top: 1px solid #3d4146;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
-	width:80%;
 }
 
 .portfolio-bg {
@@ -334,6 +334,11 @@ hr {
 	font-weight:400 !important;
 	font-size:16px;
 	color: #555;
+}
+
+label {
+	text-align:left;
+	margin-top: 10px;
 }
 
 input[type='text'] {
@@ -372,12 +377,13 @@ input[type='email'] {
 	text-align:center;
 }
 input[type=submit] {
-	font-family:'Open Sans';
-	font-weight:400;
-	font-size:18px;
-	color:#222;
-	line-height:3.0em;
-	border:1.5px solid #222;
+	font-family: 'Italianno', serif;
+	font-style: italic;
+	font-weight:500;
+	font-size:35px;
+	color:#3d4146;
+	line-height:1.7em;
+	border:1.5px solid #3d4146;
 	border-radius:3px;
 	margin:50px 0 50px 0 !important;
 	padding:0px 40px 0px 40px !important;
@@ -390,8 +396,8 @@ input[type=submit]:hover {
 	text-shadow:none;
 	text-decoration:none;
 	color:#eee !important;
-	border-color: #444 !important;
-	background-color:#444;
+	border-color: #8b95a6 !important;
+	background-color:#8b95a6;
 }
 
 .button {
@@ -538,36 +544,36 @@ button:focus {
 }
 
 @media (max-width: 768px) {
-body {
-	//padding-top:80px;
-}
+	body {
+		/* padding-top:80px; */
+	}
 
-.navbar-brand {
-	text-align: center;
-	margin-left:auto;
-	margin-right:auto;
-	border:none;
-}
-.navbar .nav li {
-	display: list-item !important;
-	background: rgba(39,39,39,.001) !important;
-}
-.navbar-collapse {
-	border:none !important;
-}
-.quote {
-	font-size:33px;
-}
-h1 {
-	font-size:33px;
-}
-.navbar-brand img {
-	margin-top:10px;
-	width:155px !important;
-	border-right:none !important;
-	padding-right:0px !important;
-}
-.main-logo {
-	width:80%;
-}
+	.navbar-brand {
+		text-align: center;
+		margin-left:auto;
+		margin-right:auto;
+		border:none;
+	}
+	.navbar .nav li {
+		display: list-item !important;
+		background: rgba(39,39,39,.001) !important;
+	}
+	.navbar-collapse {
+		border:none !important;
+	}
+	.quote {
+		font-size:33px;
+	}
+	h1 {
+		font-size:33px;
+	}
+	.navbar-brand img {
+		margin-top:10px;
+		width:155px !important;
+		border-right:none !important;
+		padding-right:0px !important;
+	}
+	.main-logo {
+		width:100%;
+	}
 }
