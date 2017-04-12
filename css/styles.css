@@ -91,19 +91,20 @@ body {
 .flexslider {
 	overflow: hidden !important;
 	z-index: -1 !important;
-	max-height: 750px;
+	height: 750px;
 	margin: 0 !important;
 	padding: 0 !important;
 	border: 0 !important;
+	border-radius: 0 !important;
 }
 
 .slides li {
-	max-height: 750px !important;
+	/* max-height: 750px !important; */
 }
 
-ul.slides li img {
-	background-size: contain !important;
-	background-position: center !important;
+.slide {
+	background-position: center center !important;
+	background-size: cover !important;
 }
 
 strong {
@@ -121,7 +122,7 @@ strong {
 }
 
 .divider {
-	margin-top:80px;
+	margin-top:70px;
 }
 
 .post {
@@ -168,7 +169,7 @@ strong {
 .menu li {
 	display: inline-block;
 	padding: 0 30px 0 30px;
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #888;
 }
 
 .menu {
@@ -236,7 +237,7 @@ footer a {
 
 .nav li a:hover {
 	color:#ddd !important;
-	background:rgba( 170, 170, 170, 0) !important;
+	background:rgba( 30, 30, 30, 0.05) !important;
 	text-shadow:none !important;
 }
 
@@ -548,33 +549,73 @@ button:focus {
 		/* padding-top:80px; */
 	}
 
+	.slides img {
+		min-height: 100% !important;
+		min-width: 100% !important;
+		background-position: center center !important;
+		background-size: cover !important;
+	}
+
+	.divider {
+		margin-top:40px;
+	}
+
 	.navbar-brand {
 		text-align: center;
 		margin-left:auto;
 		margin-right:auto;
 		border:none;
 	}
+
 	.navbar .nav li {
 		display: list-item !important;
 		background: rgba(39,39,39,.001) !important;
 	}
+
 	.navbar-collapse {
 		border:none !important;
 	}
+
 	.quote {
 		font-size:33px;
 	}
+
 	h1 {
 		font-size:33px;
 	}
+
 	.navbar-brand img {
 		margin-top:10px;
 		width:155px !important;
 		border-right:none !important;
 		padding-right:0px !important;
 	}
+
 	.main-logo {
-		margin-top: 20%;
+		margin-top: 13%;
 		width:100%;
+	}
+
+	#menu-item-14 {
+		display: none !important;
+	}
+
+	.menu {
+		text-align: center;
+	}
+
+	.menu li {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 30px 0 30px;
+		border-right: none;
+	}
+	.menu {
+		padding-left: 0px;
+	}
+
+	.menu li:last-child {
+		margin-bottom: 35px;
 	}
 }
