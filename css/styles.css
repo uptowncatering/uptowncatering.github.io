@@ -574,6 +574,7 @@ button:focus {
 		padding-right:0px !important;
 	}
 	.main-logo {
+		margin-top: 20%;
 		width:100%;
 	}
 }
