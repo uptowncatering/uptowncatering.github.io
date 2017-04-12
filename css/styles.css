@@ -549,6 +549,10 @@ button:focus {
 		/* padding-top:80px; */
 	}
 
+	.flexslider {
+		height: 50% !important;
+	}
+
 	.slides img {
 		background-position: center center !important;
 		background-size: cover !important;
