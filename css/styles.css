@@ -550,6 +550,7 @@ button:focus {
 	}
 
 	.flexslider {
+		margin-top: 61px;
 		height: 50% !important;
 	}
 
@@ -595,7 +596,7 @@ button:focus {
 
 	.main-logo {
 		margin-top: 13%;
-		width:100%;
+		width:100% !important;
 	}
 
 	#menu-item-14 {
