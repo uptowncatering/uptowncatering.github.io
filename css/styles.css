@@ -550,7 +550,7 @@ button:focus {
 	}
 
 	.flexslider {
-		margin-top: 61px;
+		margin-top: 61px !important;
 		height: 50% !important;
 	}
 
