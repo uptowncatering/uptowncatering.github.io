@@ -596,6 +596,7 @@ button:focus {
 	}
 
 	.navbar-brand {
+		width: 155px !important;
 		text-align: center;
 		margin-left:auto;
 		margin-right:auto;

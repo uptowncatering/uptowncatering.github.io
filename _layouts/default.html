@@ -71,11 +71,17 @@
 </script>
 {% if page.title == "Home" %}
     <script>
-        $(function () {
-          $(document).scroll(function () {
-            $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
-          });
-        });
+        var w = $(window).width();
+        if( w >= 768) {
+            $(function () {
+              $(document).scroll(function () {
+                $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+              });
+            });
+        }
+        if( w < 768) {
+            $('.navbar').addClass('scrolled');
+        }
     </script>
 {% else %}
     <script>
