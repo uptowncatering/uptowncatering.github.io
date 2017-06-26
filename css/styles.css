@@ -88,6 +88,11 @@ transition: opacity .5s;
 	text-shadow: 1px 1px #666 !important;
 }
 
+.grid-item {
+	width: 20%;
+	padding: 5px;
+}
+
 .scrolled .navbar-right a {
 	color: #666;
 	text-shadow: none !important;
@@ -649,6 +654,10 @@ button:focus {
 	.menu li:last-child {
 		margin-bottom: 35px;
 	}
+
+	.grid-item {
+		width: 50% !important;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -664,16 +673,24 @@ button:focus {
     .navbar-header {
         float:none;
     }
+    .grid-item {
+		width: 33%;
+	}
 }
 
 @media (max-width: 1440px) {
-	.navbar-right: display:none !important;
+	.navbar-right {
+		display:none !important;
+	} 
+	.grid-item {
+		width: 25%;
+	}
 }
 
 @media (min-width: 1440px) {
   .navbar-nav.navbar-center {
     position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
+    left: 46.5%;
+    transform: translatex(-46.5%);
   }
 }

@@ -1,2 +1,5 @@
 name: Uptown Catering
 markdown: kramdown
+collections:
+  gallery:
+    output: true
