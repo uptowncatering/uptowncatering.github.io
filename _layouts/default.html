@@ -49,11 +49,13 @@
           itemSelector: '.grid-item' });
 
         var galleryImage = window.location.hash.split('#')[1];
-        $('.gallery-image').css({
-            width: "100%", 
-            height: "600px" });
-        $('.gallery-image').css("background", "no-repeat top center/cover");
-        $('.gallery-image').css("background-image", "url(" + galleryImage + ")");
+        if (galleryImage != undefined) {
+            $('.gallery-image').css({
+                width: "100%", 
+                height: "600px" });
+            $('.gallery-image').css("background", "no-repeat top center/cover");
+            $('.gallery-image').css("background-image", "url(" + galleryImage + ")");
+        }
     </script>
 {% endif %}
 
