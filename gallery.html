@@ -18,7 +18,7 @@ title: "Gallery"
 					{% assign gallery = site.gallery %}
 					{% for image in gallery %}
 						<div class="grid-item hvr-shrink">
-							<a href="#{{ image.image_path }}" onclick="document.location.replace('gallery.html#{{ image.image_path }}'); location.reload();"><div style="width: 100%; height: 220px; background: no-repeat top center/cover url('{{ image.image_path }}');"></div></a>
+							<button type="button" class="img-link" data-path="{{ image.image_path }}" style="width: 100%; background: transparent; border: none; outline:none; -webkit-appearance: none;" ><div style="width: 100%; height: 220px; background: no-repeat top center/cover url('{{ image.image_path }}');"></div></button>
 						</div>
 					{% endfor %}
 				</div>
