@@ -6,10 +6,6 @@ Author URI: http://jeremiahlangner.com/
 Version: 1.0
 */
 
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,500,500i');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css?family=Italianno');
-
 html {
 	min-height: 100%;
 }
