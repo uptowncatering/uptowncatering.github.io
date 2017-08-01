@@ -2,6 +2,8 @@ name: Uptown Catering
 markdown: kramdown
 # Google services
 google_analytics: UA-72410213-1
+gems:
+  - jekyll-sitemap
 collections:
   gallery:
     output: true
