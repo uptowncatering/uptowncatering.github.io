@@ -18,6 +18,9 @@
     <link href="{{ site.baseurl }}/css/hover.min.css" rel="stylesheet">
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
 
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
 </head>
 
 <body>
